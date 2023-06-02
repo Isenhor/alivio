@@ -1,0 +1,272 @@
+@media (max-width: 1535px) {
+    .container-wide {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1399px) {
+    .container {
+        width: 100%;
+    }
+
+
+    .how-it-works {
+        padding-top: 80px;
+    }
+
+    .how-it-works-header {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .how-it-works-subtitle {
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    .how-it-works-header-content {
+        padding-top: 20px;
+    }
+
+
+}
+
+@media (max-width: 1399px) {
+    .how-it-works-steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 390px);
+        column-gap: 95px;
+    }
+
+    .step:nth-child(2),
+    .step:nth-child(3) {
+        padding-top: 0;
+    }
+
+    .footer {
+        background-color: #245852;
+        padding: 80px 0 100px;
+    }
+
+    .footer-logo+* {
+        margin-top: 50px;
+    }
+
+    .footer-nav-list {
+        font-size: 22px;
+    }
+
+    .footer-nav-item+.footer-nav-item {
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width: 1299px) {
+    .product-img-wrapper {
+        flex: 1 0 auto;
+        flex-basis: 50%;
+    }
+
+    .product-content-subtitle {
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    .product-card {
+        top: 60%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .header-row {
+        justify-content: space-between;
+    }
+
+    .header-nav {
+        margin-left: 50px;
+    }
+
+    .header-nav-list {
+        gap: 40px;
+    }
+
+    .header-login {
+        margin-left: 30px;
+    }
+
+    .story {
+        padding: 90px 0 90px;
+    }
+
+    .story-row {
+        flex-direction: column-reverse;
+    }
+
+    .story-heading {
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    .story-text {
+        font-size: 20px;
+        line-height: 130%;
+        margin-bottom: 30px;
+    }
+
+    .story-video {
+        margin-bottom: 40px;
+    }
+
+    .product {
+        padding-top: 80px;
+    }
+
+    .product-card {
+        bottom: -50px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .button {
+        padding: 10px 25px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-login {
+        display: none;
+    }
+
+    .home {
+        padding: 40px 0;
+        min-height: unset;
+    }
+
+    .home-heading {
+        font-size: 45px;
+        line-height: 1.2;
+    }
+
+    .home-text {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .home-bg-img {
+
+        opacity: 0.5;
+    }
+
+    .story {
+        padding: 60px 0 60px;
+    }
+
+    .story-text {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .story-heading {
+        font-size: 30px;
+        line-height: 130%;
+    }
+
+    .product {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .product-row {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .product-content-subtitle {
+        font-size: 30px;
+    }
+
+    .product-content-text {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .product-card {
+        position: relative;
+        z-index: 2;
+        margin-top: -20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-img-wrapper {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .product {
+        padding-bottom: 40px;
+    }
+
+    .product-card {
+        margin: -30% 15px 0;
+    }
+
+    .card {
+        max-width: 296px;
+    }
+
+    .footer {
+        padding: 60px 0 80px;
+    }
+
+    .footer-logo+* {
+        margin-top: 40px;
+    }
+
+    .footer-nav-list {
+        font-size: 18px;
+    }
+
+    .footer-nav-item+.footer-nav-item {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 419px) {
+
+    .how-it-works-header-head {
+        min-width: unset;
+    }
+
+    .how-it-works-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .story {
+        padding: 30px 0 30px;
+    }
+
+    .story-video {
+        margin-bottom: 20px;
+    }
+
+    .story-heading {
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+}

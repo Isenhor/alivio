@@ -1,0 +1,184 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Utility */
+
+.none {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Grid */
+
+.container {
+    width: 1400px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.container-wide {
+    width: 1536px;
+}
+
+/* Button */
+
+.button {
+    display: inline-block;
+    padding: 20px 50px;
+    color: #FFF !important;
+    background-color: #01996D;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    transition: opacity 0.2s ease;
+}
+
+.button:hover {
+    color: #FFF;
+    opacity: 0.8;
+}
+
+/* Mobile Nav */
+
+.mobile-nav-button {
+    /* Reset for button */
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    /* Nav icon styles */
+    position: relative;
+    z-index: 999;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.mobile-nav-button__icon {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+}
+
+.mobile-nav-button__icon::after,
+.mobile-nav-button__icon::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+    /* Трансформация при закрывании */
+    transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+}
+
+.mobile-nav-button__icon::before {
+    left: 0;
+    top: -10px;
+}
+
+.mobile-nav-button__icon::after {
+    left: 0;
+    top: 10px;
+}
+
+.mobile-nav-button__icon.active::before {
+    transform: rotate(45deg);
+    top: 0;
+    /* Трансформации при открытии */
+    transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+
+.mobile-nav-button__icon.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    /* Трансформации при открытии */
+    transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+
+.mobile-nav {
+    display: none;
+
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 15px;
+
+    text-align: center;
+}
+
+.mobile-nav.active {
+    display: flex;
+}
+
+.mobile {}
+
+.mobile-nav-logo {}
+
+.mobile-nav-list {
+    font-size: 22px;
+}
+
+.mobile-nav-item+.mobile-nav-item {
+    margin-top: 20px;
+}
+
+.mobile-nav-item-link {}
+
+.mobile-login {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 22px;
+}
+
+
+.mobile-login-link {}
+
+.button {}
+
+.mobile-login-button {
+    font-size: 22px;
+}
+
+@media (max-width: 991px) {
+    .mobile-nav-button {
+        display: flex;
+    }
+
+}
